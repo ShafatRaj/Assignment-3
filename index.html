@@ -1,14 +1,112 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project3</title>
+    <!--DaisyUi-->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!--Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <!--font awesome-->
+    <script src="https://kit.fontawesome.com/a8cebee173.js" crossorigin="anonymous"></script>
+    <!--tailwind-->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#494949',
+                        secondary: '#737373',
+                        button: '#ABEF5F',
+                        accent: '#ABEF5F',
+                    },
+                    fontFamily: {
+                        Manrope: 'Manrope',
+                    }
+                }
+            }
+        }
+    </script>
+
 </head>
 
-<body>
+<body class="font-Manrope">
+    <!--header section start-->
+    <header>
+        <nav class="w-10/12 mx-auto">
+            <div class="navbar">
+                <div class="navbar-start">
 
+                    <i class="fa-solid fa-arrow-right -rotate-45"></i>
+
+                    <h1 class="font-extrabold text-2xl">
+                        </i>Rinterio</h1>
+                </div>
+                <div class="navbar-center hidden lg:flex ">
+                    <ul class="menu menu-horizontal px-1 font-medium">
+                        <li class="text-primary font-extrabold"><a>Home</a></li>
+                        <li class="text-secondary"><a>Services</a></li>
+                        <li class="text-secondary"><a>Portfolio</a></li>
+                        <li class="text-secondary"><a>Blogs</a></li>
+                        <li class="text-secondary"><a>Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                    <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                        <li class="text-primary font-extrabold"><a>Home</a></li>
+                        <li class="text-secondary"><a>Services</a></li>
+                        <li class="text-secondary"><a>Portfolio</a></li>
+                        <li class="text-secondary"><a>Blogs</a></li>
+                        <li class="text-secondary"><a>Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end gap-5">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <a class="btn bg-button rounded-full font-extrabold">Book Consult <i class="fa-solid fa-arrow-right -rotate-45"></i></a>
+
+                </div>
+            </div>
+        </nav>
+
+    </header>
+    <main class="justify-center">
+        <div class="flex justify-center">
+            <img class="p-6" src="assets/banner.png" alt="">
+        </div>
+        <section class="text-center py-10">
+            <div>
+                <h3 class="font-extrabold text-6xl">
+                    A barn house of this design has <br> a striking appearance
+                </h3>
+            </div>
+            <div class="py-10 text-sm">
+                <p>The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal <br> accents, and large windows that flood the space with natural light.</p>
+            </div>
+            <div><button class="btn rounded-full bg-button">View Details <i class="fa-solid fa-arrow-right -rotate-45"></i></button></div>
+        </section>
+
+        <section class="w-10/12 mx-auto">
+            <div>
+                <div class="badge badge-outline">About Us</div>
+            </div>
+            <div>
+                <h1 class=>
+                    We design thoughtful, liveable spaces
+                </h1>
+            </div>
+            <div></div>
+        </section>
+    </main>
 </body>
 
 </html>
